@@ -56,6 +56,11 @@ class ViewController: UIViewController {
     
     
     @objc func didTapButton(){
+        
+        //Remove the view of result of the scene
+        hotDog.removeFromSuperview()
+        notHotDog.removeFromSuperview()
+        
         let picker = UIImagePickerController()
         picker.sourceType = .camera
         picker.delegate = self
@@ -71,8 +76,10 @@ class ViewController: UIViewController {
         takePictureButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         takePictureButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         
+        imageView.widthAnchor.constraint(equalToConstant: 350).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 600).isActive = true
         imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -30).isActive = true
         imageView.trailingAnchor.constraint(equalTo : view.trailingAnchor, constant: -20).isActive = true
         imageView.bottomAnchor.constraint(equalTo: takePictureButton.topAnchor, constant: -10).isActive = true
         
@@ -104,7 +111,7 @@ extension ViewController : UIImagePickerControllerDelegate, UINavigationControll
         }else{
             self.isHotDog = false
         }
-        configureResult()
+        displayResult()
         imageView.image = image
     }
     
@@ -118,7 +125,7 @@ extension ViewController : UIImagePickerControllerDelegate, UINavigationControll
         return ""
     }
     
-    func configureResult(){
+    func displayResult(){
         if isHotDog{
             self.view.addSubview(hotDog)
             hotDog.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -133,6 +140,8 @@ extension ViewController : UIImagePickerControllerDelegate, UINavigationControll
             notHotDog.heightAnchor.constraint(equalToConstant: 150).isActive = true
             notHotDog.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         }
+        
+        view.bringSubviewToFront(takePictureButton)
     }
     
 }
