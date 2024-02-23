@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2FA5682B8804CF00A1F144 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2FA5672B8804CF00A1F144 /* View.swift */; };
 		CE80B3632B87C875004C4D84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80B3622B87C875004C4D84 /* AppDelegate.swift */; };
 		CE80B3652B87C875004C4D84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80B3642B87C875004C4D84 /* SceneDelegate.swift */; };
 		CE80B3672B87C875004C4D84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80B3662B87C875004C4D84 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE2FA5672B8804CF00A1F144 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		CE80B35F2B87C875004C4D84 /* HotDog&NotHotDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HotDog&NotHotDog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE80B3622B87C875004C4D84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE80B3642B87C875004C4D84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				CE80B37A2B87D7C7004C4D84 /* HotDogModel.mlmodel */,
 				CE80B3782B87C9FD004C4D84 /* ImageProcessor.swift */,
 				CE80B3662B87C875004C4D84 /* ViewController.swift */,
+				CE2FA5672B8804CF00A1F144 /* View.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				CE80B3672B87C875004C4D84 /* ViewController.swift in Sources */,
 				CE80B3632B87C875004C4D84 /* AppDelegate.swift in Sources */,
+				CE2FA5682B8804CF00A1F144 /* View.swift in Sources */,
 				CE80B37B2B87D7C7004C4D84 /* HotDogModel.mlmodel in Sources */,
 				CE80B3792B87C9FD004C4D84 /* ImageProcessor.swift in Sources */,
 				CE80B3652B87C875004C4D84 /* SceneDelegate.swift in Sources */,
